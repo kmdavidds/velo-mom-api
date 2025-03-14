@@ -20,7 +20,7 @@ func NewRest(usecase *usecase.Usecase, middleware middleware.Interface) *Rest {
 	router := gin.Default()
 
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173", "https://localhost:5173", "https://velomom-reynammars-projects.vercel.app/"},
+		AllowOrigins:     []string{"http://localhost:5173", "https://localhost:5173", "https://velomom-reynammars-projects.vercel.app"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		AllowCredentials: true,
